@@ -19,6 +19,8 @@ const App = () => {
     if (currentIndex < flashcards.length - 1) {
       setCurrentIndex(currentIndex + 1);
       setFlipped(false);
+      setFeedback(null);    
+      setGuess(""); 
     }
   };
 
@@ -26,6 +28,8 @@ const App = () => {
     if (currentIndex > 0) {
       setCurrentIndex(currentIndex - 1);
       setFlipped(false);
+      setFeedback(null);   
+      setGuess(""); 
     }
   };
   
